@@ -1,0 +1,143 @@
+/* Contenedor del banner */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Pantalla completa */
+    overflow: hidden;
+  }
+  
+/* Fondo con oscurecimiento y difuminado mejorado */
+.banner-bg {
+    background-image: url('https://bomtravel.com/wp-content/uploads/2022/03/10-16.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Nueva forma de difuminar sin bordes blancos */
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Oscurecimiento */
+      backdrop-filter: blur(4px); /* Difuminado sin los brillos blancos */
+    }
+}
+  
+  
+  /* Contenido centrado */
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 90%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Desktop: Limita el ancho del texto */
+  @media (min-width: 768px) {
+    .banner-content {
+      max-width: 600px;
+    }
+  }
+  
+  .imgEmi {
+   
+    max-height: 350px; /* Máximo alto permitido */
+    width: 100%; /* Se adapta al contenedor */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Recorta la imagen si es necesario */
+    border-radius: 3px; /* Opcional: bordes redondeados */
+  }
+
+  .imgModal{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+/* Contenedor principal */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contenedor de cada hito */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px; /* Espacio entre los hitos */
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+/* Contenedor de la fecha */
+.timeline-date-container {
+  width: 20%; /* 20% para la fecha */
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #6A0DAD;  /* Color de la fecha */
+}
+
+/* Contenedor del contenido (función desempeñada) */
+.timeline-content-container {
+  width: 80%; /* 80% para el contenido */
+  padding-left: 40px;
+}
+
+/* Título de la función desempeñada */
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: whitesmoke; /* Color del título */
+}
+
+/* Descripción del cargo */
+.timeline-description {
+  font-size: 1rem;
+  color: #555; /* Color del texto */
+}
+
+/* Línea entre los puntos de la línea de tiempo (opcional) */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #6A0DAD;
+  transform: translateX(-50%);
+}
+
+#root{
+  background-color: #212529;
+}
+
+h2, p{
+  color: whitesmoke;
+}
+
+.navbaris{
+  background-color: black !important;
+}
+
+  
+
+
+  
+  
