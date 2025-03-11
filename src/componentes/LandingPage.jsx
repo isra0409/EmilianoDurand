@@ -288,7 +288,7 @@ const LandingPage = () => {
             {/* Redes sociales */}
             <div className="col-md-4">
               <h5 className="text-uppercase mb-3">Síguenos</h5>
-              <div>
+              <div className="redes">
                 <a href="#" className="text-white me-3 fs-4" title="Facebook">
                   <i className="bi bi-facebook"></i>
                 </a>
