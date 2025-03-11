@@ -94,15 +94,7 @@ const LandingPage = () => {
                   Sobre Mí
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#works"
-                  onClick={handleNavLinkClick}
-                >
-                  Trabajos
-                </a>
-              </li>
+
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -110,6 +102,15 @@ const LandingPage = () => {
                   onClick={handleNavLinkClick}
                 >
                   Trayectoria
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#works"
+                  onClick={handleNavLinkClick}
+                >
+                  Trabajos
                 </a>
               </li>
               <li className="nav-item">
@@ -311,10 +312,7 @@ const LandingPage = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#works"
-                    className="text-white text-decoration-none"
-                  >
+                  <a href="#works" className="text-white text-decoration-none">
                     <i className="bi bi-briefcase me-2"></i>Trabajos
                   </a>
                 </li>
@@ -347,7 +345,6 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        
       </footer>
       <p className="text-center m-0">@fastfrontwebs</p>
     </>
