@@ -312,7 +312,7 @@ const LandingPage = () => {
                 </li>
                 <li>
                   <a
-                    href="/trabajos"
+                    href="#works"
                     className="text-white text-decoration-none"
                   >
                     <i className="bi bi-briefcase me-2"></i>Trabajos
@@ -320,7 +320,7 @@ const LandingPage = () => {
                 </li>
                 <li>
                   <a
-                    href="/contacto"
+                    href="#contact-form"
                     className="text-white text-decoration-none"
                   >
                     <i className="bi bi-envelope-paper me-2"></i>Contacto
@@ -349,7 +349,7 @@ const LandingPage = () => {
         </div>
         
       </footer>
-      <p className="text-center">@fastfrontwebs</p>
+      <p className="text-center m-0">@fastfrontwebs</p>
     </>
   );
 };
